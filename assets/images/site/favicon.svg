@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs/>
+  <g id="favicon" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1" stroke-opacity="1">
+    <title>favicon</title>
+    <g id="favicon_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_82">
+        <g id="Graphic_64">
+          <rect x="1" y="24" width="6" height="20" fill="#de2d32"/>
+        </g>
+        <g id="Graphic_70">
+          <rect x="9" y="15" width="6" height="29" fill="#ff7201"/>
+        </g>
+        <g id="Graphic_71">
+          <rect x="17" y="20" width="6" height="24" fill="#fccf1f"/>
+        </g>
+        <g id="Graphic_72">
+          <rect x="25" y="0" width="6" height="44" fill="#00ba5d"/>
+        </g>
+        <g id="Graphic_73">
+          <rect x="33" y="8" width="6" height="36" fill="#0778ff"/>
+        </g>
+        <g id="Graphic_74">
+          <rect x="41" y="20" width="6" height="24" fill="#b81ddd"/>
+        </g>
+        <g id="Graphic_75">
+          <rect x="1" y="46" width="46" height="2" fill="#ece9e8"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

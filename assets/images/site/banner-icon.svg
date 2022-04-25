@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 735" width="720" height="735">
+  <defs/>
+  <g id="logo" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1" stroke-opacity="1">
+    <title>logo</title>
+    <g id="logo_colour">
+      <title>colour</title>
+      <g id="Group_169">
+        <g id="Graphic_176">
+          <rect x="65.3125" y="367.5" width="76.875" height="256.25" fill="#de2d32"/>
+        </g>
+        <g id="Graphic_175">
+          <rect x="167.8125" y="252.1875" width="76.875" height="371.5625" fill="#ff7201"/>
+        </g>
+        <g id="Graphic_174">
+          <rect x="270.3125" y="316.25" width="76.875" height="307.5" fill="#fccf1f"/>
+        </g>
+        <g id="Graphic_173">
+          <rect x="372.8125" y="60" width="76.875" height="563.75" fill="#00ba5d"/>
+        </g>
+        <g id="Graphic_172">
+          <rect x="475.3125" y="162.5" width="76.875" height="461.25" fill="#0778ff"/>
+        </g>
+        <g id="Graphic_171">
+          <rect x="577.8125" y="316.25" width="76.875" height="307.5" fill="#b81ddd"/>
+        </g>
+        <g id="Graphic_170">
+          <rect x="65.3125" y="649.375" width="589.375" height="25.625" fill="#ece9e8"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
