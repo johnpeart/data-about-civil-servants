@@ -1,0 +1,16 @@
+{% for parent in page.responses %}
+{% for response in parent %}
+  {% assign subquestions = site.data.questions | where_exp: "subquestions", "subquestions.code == response" %}
+  {% for response in subquestions %}
+    {% assign code = response.code %}
+    {% assign label = response.label %}
+    {% assign description = response.description %}
+    
+    <h2>{{ label }}</h2>
+
+    {% include components/data-sexualorientation.html %}
+    {% include components/data-gender.html %}
+
+  {% endfor %}
+{% endfor %}
+{% endfor %}

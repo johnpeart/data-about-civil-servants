@@ -1,0 +1,300 @@
+// Global styles
+
+@at-root {
+  @-ms-viewport {
+      width: device-width;
+  } // stylelint-disable-line at-rule-no-vendor-prefix
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+
+  font-family: 			$font-family;
+  font-kerning: 			auto;
+  letter-spacing: 		normal;
+
+  @each $style, $sizes in $body {
+      @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+
+  background: map-get($colors, "deep-purple");
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  @include toggleSizes(overflow-y, auto, auto, scroll, scroll, scroll);
+  @include toggleSizes(overflow-x, hidden, hidden, auto, auto, auto);
+
+}
+
+body {
+
+  display: grid;
+
+  background: map-get($colors, "deep-purple");
+  color: map-get($colors, "deep-purple");
+
+  @include toggleSizes(grid-template-columns, 1fr, 1fr, 30vw 1fr, 27.5vw 1fr, 25vw 1fr);
+  @include toggleSizes(grid-template-rows, 100vh auto, auto auto, 100vh, 100vh, 100vh);
+
+  @include toggleSizes(overflow-y, auto, auto, scroll, scroll, scroll);
+  @include toggleSizes(overflow-x, hidden, hidden, auto, auto, auto);
+
+}
+
+section#content {
+
+  display: block;
+  position: relative;
+
+  top: 0;
+
+  background: map-get($colors, "westminster-white");
+  color: map-get($colors, "deep-purple");
+
+  min-height: 100vh;
+
+  @include toggleSizes(height, auto, auto, 100vh, 100vh, 100vh);
+  @include toggleSizes(overflow-y, auto, auto, scroll, scroll, scroll);
+  @include toggleSizes(overflow-x, hidden, hidden, auto, auto, auto);
+
+}
+
+main {
+
+  min-height: 80vh;
+
+  @include toggleSizes(padding-top, ($container-padding * 2), ($container-padding * 2), ($container-padding * 3), ($container-padding * 3), ($container-padding * 3));
+  @include toggleSizes(padding-bottom, ($container-padding * 2), ($container-padding * 2), ($container-padding * 3), ($container-padding * 3), ($container-padding * 3));
+
+}
+
+article.explanation {
+  
+  p { 
+    @each $style, $sizes in $lead {
+        @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+    }
+  }  
+  p:first-of-type {
+    padding-top: $container-padding;
+    color: map-get($colors, "grey-1")
+  }
+  p:last-of-type {
+    padding-bottom: $container-padding * 3;
+  }
+
+} 
+
+aside.errors p:first-of-type {
+  border-top: 1px solid map-get($colors, "grey-3");
+  padding-top: $container-padding;
+  color: map-get($colors, "grey-1")
+}
+aside.errors p:last-of-type {
+  padding-bottom: $container-padding * 3;
+} 
+section.data-block {
+  padding: 0 $container-padding;
+  border-bottom: 1px dotted map-get($colors, "grey-3");
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+div.data-block--values {
+
+  display: grid;
+  @include toggleSizes(grid-template-columns,
+    1fr,
+    1fr 1fr,
+    1fr 1fr,
+    1fr 1fr 1fr 1fr,
+    1fr 1fr 1fr 1fr
+  );
+
+  align-items: center;
+
+  grid-gap: $container-padding;
+  padding: $container-padding 0;
+  
+  background: map-get($colors, "white");
+  
+  & + div.data-block--values {
+    padding-top: 0;
+  }
+  
+  border-bottom: 1px dotted map-get($colors, "grey-3");
+  &:last-child {
+    border-bottom: none;
+  }
+
+}
+
+p.data-block--item {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  justify-items: center;
+}
+
+p span.data--value {
+
+  @each $style, $sizes in $largeNumber {
+      @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+
+  color: map-get($colors, "purple--dark");
+
+}
+
+p span.data--label {
+
+  @each $style, $sizes in $label {
+      @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+
+}
+
+
+details {
+
+    background: map-get($colors, "white");
+    margin-bottom: $container-padding;
+    @include box-shadow();
+
+}
+
+details summary {
+
+    position: relative;
+    padding: $container-padding;
+
+    // Hide the marker completely.
+    list-style-image: none;
+    &::marker,
+    &::-webkit-details-marker {
+      display: none;
+      list-style-image: none;
+      content: '';
+      width: 0;
+      height: 0;
+    }
+    
+    &::after {
+      display: block;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      content: 'Show more';
+      font-family: $font-family;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: map-get($colors, "link");
+      @each $style, $sizes in $summaryMoreLabel {
+          @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+      }
+    }
+    
+
+	&:hover {
+		text-decoration: underline !important;
+		cursor: pointer;
+	}
+	&:focus {
+		&:after {
+			color: map-get($colors, "link-focus");
+		}
+	}
+	&:active {
+		&:after {
+			color: map-get($colors, "link-focus");
+		}
+	}
+
+}
+
+details[open] > summary {
+    &::after {
+      content: 'Show less';
+    }
+}
+
+details > summary:focus,
+details[open] > summary:focus {
+
+  background: map-get($colors, "mint--light");
+  outline: none;
+
+  &:active {
+    outline: 5px solid map-get($colors, "mint--light");
+  }
+
+}
+
+details > summary:focus-visible,
+details > summary:active,
+details[open] > summary:focus-visible,
+details[open] > summary:active {
+
+  background: map-get($colors, "mint--light");
+  outline: 5px solid map-get($colors, "mint--light");
+
+}
+
+details[open] > summary {
+  border-bottom: 1px dotted map-get($colors, "grey-3");
+}
+
+ul.navigation {
+
+  display: grid;
+
+  @include toggleSizes(
+    grid-template-columns,
+    1fr,
+    1fr,
+    1fr,
+    1fr,
+    1fr
+  );
+  
+  grid-gap: 0;
+
+  background: map-get($colors, "white");
+
+  list-style: none;
+
+  padding: 0 $container-padding * 2;
+
+}
+
+ul.navigation li {
+
+  padding: 0;
+  margin: 0;
+
+  @include toggleSizes(max-width,
+    100%,
+    100%,
+    100%,
+    100%,
+    100%
+  );
+
+  &:nth-of-type(2) {
+    grid-column: 1;
+  }
+  padding: $container-padding * 2 0;
+  border-top: 1px dotted map-get($colors, "grey-3");
+
+  &:first-of-type {
+    border-top: none;
+  }
+
+}

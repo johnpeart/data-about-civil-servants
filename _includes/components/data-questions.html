@@ -1,0 +1,38 @@
+{% if noquestions == false and areresponses == false %}
+<hr>
+<h1 class="largeTitle">Questions in this theme</h1>
+{% else if areresponses == true %}
+{% endif %}
+
+{% for q in page.questions %}
+  {% assign subquestions = site.data.questions | where_exp: "subquestions", "subquestions.code == q.question" | uniq %}
+  {% for sq in subquestions %}
+    {% assign code = sq.code %}
+    {% assign label = sq.label %}
+    {% assign description = sq.description %}
+    
+    {% if q.responses != nil %}
+    <h2>{{ label }}</h2>
+    {{ description | markdownify }}
+    {% assign responses = q.responses | uniq %}
+    {% for r in responses %}
+      {% assign questionresponses = site.data.questions | where_exp: "res", "res.code == r" %}
+      {% for response in questionresponses %}
+        {% assign code = response.code %}
+        {% assign label = response.label %}
+        {% assign description = response.description %}
+        
+        <h3><span class="question-code">{{ code }}</span> {{ label }}</h3>
+        {% include components/data-sexualorientation.html %}
+        {% include components/data-gender.html %}
+      {% endfor %}
+    {% endfor %}
+    {% else %}
+    <h2><span class="question-code">{{ code }}</span> {{ label }}</h2>
+    {{ description | markdownify }}
+    {% include components/data-sexualorientation.html %}
+    {% include components/data-gender.html %}
+    {% endif %}
+
+  {% endfor %}
+{% endfor %}

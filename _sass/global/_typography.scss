@@ -1,0 +1,187 @@
+hr {
+  border: 0;
+  border-top: 2px dotted map-get($colors, "grey-3");
+  margin: $container-padding * 2 0;
+}
+
+a {
+  font-weight: 		normal;
+  text-decoration: 	none;
+  cursor: pointer;
+
+  &:link {
+      color: map-get($colors, "link");
+  }
+  &:visited {
+      color: map-get($colors, "link-visited");
+  }
+  &:hover {
+      color: map-get($colors, "link-hover");
+      text-decoration: 	underline;
+  }
+  &:focus {
+      color: map-get($colors, "deep-purple") !important;
+      background: map-get($colors, "mint");
+      outline: 5px solid map-get($colors, "mint");
+  }
+  &:focus-visible {
+      color: map-get($colors, "deep-purple") !important;
+      background: map-get($colors, "mint");
+      outline: 5px solid map-get($colors, "mint");
+  }
+  &:active {
+      text-decoration: 	none;
+      color: map-get($colors, "deep-purple") !important;
+  }
+}
+
+
+
+
+
+p,
+li {
+  @each $style, $sizes in $body {
+    @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+}
+
+dt {
+  @each $style, $sizes in $definitionTermData {
+    @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+}
+
+dd {
+  @each $style, $sizes in $definitionDetailsData {
+    @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+}
+
+p.lead {
+  @each $style, $sizes in $lead {
+      @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+}
+
+p.navigation-list--title {
+    @each $style, $sizes in $title3 {
+        @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+    }
+    padding: 0 0 $container-padding !important;
+}
+
+div.navigation-list--label p {
+    @each $style, $sizes in $body {
+        @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+    }
+    &:last-child {
+      padding: 0 !important;
+    }
+}
+
+ul {
+  list-style: disc;
+  padding-top: 0;
+  padding-left: $container-padding * 2;
+}
+ol {
+  list-style: decimal;
+  padding-top: 0;
+}
+
+strong, b {
+  font-weight: 	bold;
+}
+
+em, i {
+  font-style: 	italic;
+}
+
+u {
+  text-decoration: underline;
+}
+
+center {
+  text-align: center;
+}
+
+h1 {
+  @each $style, $sizes in $title1 {
+      @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+}
+
+h1.largeTitle {
+  @each $style, $sizes in $title1LargeTitle {
+      @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+}
+
+h1 + h2 {
+
+}
+
+
+h2 + h3 {
+  padding-top: 0;
+}
+
+h2 {
+  @each $style, $sizes in $title2 {
+      @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+}
+
+h2.largeTitle {
+  @each $style, $sizes in $title2LargeTitle {
+      @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+}
+
+summary {
+  @each $style, $sizes in $title3LargeTitle {
+      @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+}
+
+h3 {
+  @each $style, $sizes in $title3 {
+      @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+}
+
+h3.data-block--header {
+  @each $style, $sizes in $title3 {
+    @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+    padding-top: $container-padding !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+span.question-code {
+  color: map-get($colors, "grey-2");
+}
+
+h4 {
+  @each $style, $sizes in $title4 {
+      @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+}
+
+
+blockquote {
+
+  padding: $container-padding;
+  border-left: 5px solid map-get($colors, "purple");
+  background: map-get($colors, "purple--light");
+
+  *:last-child {
+      padding-bottom: 0;
+  }
+
+  &.banner-mode {
+      margin-bottom: $container-padding;
+  }
+
+}

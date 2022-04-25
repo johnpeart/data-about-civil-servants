@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<h1 class="largeTitle">Data about civil servants who are LGBT+</h1>
+
+<p class="lead">All data on this site is taken from <a href="https://www.gov.uk/government/publications/civil-service-people-survey-2020-results" title="Visit GOV.UK to download the source data">the results of the 2020 Civil Service People Survey</a>, which looks at civil servants' attitudes to and experience of working in government departments.</p>
+
+<h2 class="largeTitle">Questions</h2>
+
+<ul class="navigation">
+    {% assign qs = site.questions %}
+    {% for q in qs %}
+      {% assign code = q.id | remove: "/question/" %}
+      {% assign question = site.data.questions | where_exp: "question", "question.code == code" | first %}
+      {% assign label = question.label %}
+    <li>
+        <a href="{{ q.url }}" title="See data for {{ label }}">
+            <p class="navigation-list--title">{{ label }}</p>
+        </a>
+        {% if question.description %}<div class="navigation-list--label">{{ question.description | markdownify }}</div>{% endif %}
+    </li>
+    {% endfor %}
+</ul>

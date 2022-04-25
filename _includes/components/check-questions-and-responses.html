@@ -1,0 +1,9 @@
+{% for q in page.questions %}
+  {% if q.responses %}
+    {% assign areresponses = true %}
+  {% else %}
+    {% assign areresponses = false %}
+  {% endif %}
+  {% break %}
+{% endfor %}
+

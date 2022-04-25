@@ -1,0 +1,83 @@
+######################
+# Site configuration #
+######################
+title: "Data about LGBT+ civil servants"
+description: "A website showing data from the Civil Service People Survey about civil servants who are LGBT+."
+author: "John Peart"
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://data.civilservants.whoare.lgbt"
+
+analytics: true
+analytics-token: "d36444326796457985d7fc75774c393e"
+
+###############
+# Asset paths #
+###############
+image-path: "/assets/images"
+css-path: "/assets/styles"
+js-path: "/assets/scripts"
+social-media-image: "/assets/images/site/social-media.png"
+favicon: "/favicon.ico"
+favicon-svg: "/assets/images/site/favicon.svg"
+favicon-pinned-svg: "/assets/images/site/favicon-pinned-svg.svg"
+favicon-large-png: "/assets/images/site/favicon-large-png.png"
+theme-colour: "#373151"
+
+#######################
+# <link rel="me" ...> #
+#######################
+# Twitter
+twitter-url: "https://twitter.com/johnpeart" # Twitter handle i.e. joebloggs
+twitter-handle: "johnpeart" # Twitter handle i.e. joebloggs
+# Mastodon
+mastodon-url: "https://mastodon.social/@johnpeart"
+mastodon-handle: "johnpeart@mastodon.social"
+# Github
+github-url:  "https://github.com/johnpeart/data-lgbt-civil-servants"
+github-handle:  "johnpeart"
+
+###############
+# Collections #
+###############
+collections:
+  questions:
+    output: true
+    permalink: /question/:name
+    order:
+      - ees.md
+      - mw_p.md
+      - op_p.md
+      - lm_p.md
+      - mt_p.md
+      - ld_p.md
+      - if_p.md
+      - rw_p.md
+      - pb_p.md
+      - lc_p.md
+
+##################
+# Build settings #
+##################
+permalink: pretty
+markdown: kramdown
+future: false
+highlighter: rouge
+sass:
+  sass_dir: _sass
+
+plugins:
+- jekyll-sitemap
+- jekyll-redirect-from
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

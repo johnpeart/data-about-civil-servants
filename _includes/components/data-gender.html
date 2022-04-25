@@ -1,0 +1,72 @@
+<details class="data-block">
+  
+  <summary class="data-block--summary">
+    Results by gender
+  </summary>
+
+  <section class="data-block data-block--gender">
+    
+    <h3 class="data-block--header">All respondents</h3>
+    <div class="data-block--values">
+      
+      {% for data in genderJ1A %}
+
+      <dl class="data-block--item">
+        <dt class="data--label">{{ data.response | replace: "Male", "Men" | replace: "Female", "Women" }}</dt>
+        <dd class="data--value">{{ data[code] | round }}%</dd>
+      </dl>
+      
+      {% endfor %}
+      
+    </div>
+    
+    <h3 class="data-block--header">Cisgender respondents</h3>
+    <div class="data-block--values">
+      
+      {% for data in genderJ1Bcisgender %}
+
+      <dl class="data-block--item">
+        <dt class="data--label">{{ data.response | replace: "Cisgender", "All" }}</dt>
+        <dd class="data--value">{{ data[code] | round }}%</dd>
+      </dl>
+      
+      {% endfor %}
+      
+      
+      {% for data in genderJ1Ccisgender %}
+
+      <dl class="data-block--item">
+        <dt class="data--label">{{ data.response | replace: "Cis-Male", "Men" | replace: "Cis-Female", "Women" }}</dt>
+        <dd class="data--value">{{ data[code] | round }}%</dd>
+      </dl>
+      
+      {% endfor %}
+      
+    </div>
+    <h3 class="data-block--header">Transgender and other respondents</h3>
+    <div class="data-block--values">
+      
+      {% for data in genderJ1Btransgender %}
+
+      <dl class="data-block--item">
+        <dt class="data--label">{{ data.response | replace: "Transgender-Other", "All" }}</dt>
+        <dd class="data--value">{{ data[code] | round }}%</dd>
+      </dl>
+      
+      {% endfor %}
+      
+      
+      {% for data in genderJ1Ctransgender %}
+
+      <dl class="data-block--item">
+        <dt class="data--label">{{ data.response | replace: "Trans-Male", "Men" | replace: "Trans-Female", "Women" }}</dt>
+        <dd class="data--value">{{ data[code] | round }}%</dd>
+      </dl>
+      
+      {% endfor %}
+      
+    </div>
+      
+  </section>
+
+</details>

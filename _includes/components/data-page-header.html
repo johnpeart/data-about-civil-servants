@@ -1,0 +1,8 @@
+<h1 class="largeTitle">{{ label }}</h1>
+{% if areresponses == true %}
+  <h2>{{ description }}</h2>
+{% else %}
+  <article class="explanation">
+  {{ description | markdownify }}
+  </article>
+{% endif %}

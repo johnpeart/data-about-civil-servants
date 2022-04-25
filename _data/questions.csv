@@ -1,0 +1,173 @@
+code,label,description
+ees,Employee engagement index,"Questions B47 to B51. 
+
+The engagement index is calculated as the average engagement score in the each organisation. For each respondent, an engagement score is calculated as the average score across the five questions where “strongly disagree” is equivalent to 0 and “strongly agree” is equivalent to 100."
+mw_p,My work,"Questions B01 to B05.
+
+The headline theme score is calculated as the median percentage of “agree” and “strongly agree” responses across the organisation."
+op_p,Organisational objectives and purpose,"Questions B06 to B07.
+
+The headline theme score is calculated as the median percentage of “agree” and “strongly agree” responses across the organisation."
+lm_p,My manager,"Questions B08 to B17.
+
+The headline theme score is calculated as the median percentage of “agree” and “strongly agree” responses across the organisation."
+mt_p,My team,"Questions B18 to B20.
+
+The headline theme score is calculated as the median percentage of “agree” and “strongly agree” responses across the organisation."
+ld_p,Learning and development,"Questions B21 to B24.
+
+The headline theme score is calculated as the median percentage of “agree” and “strongly agree” responses across the organisation."
+if_p,Inclusion and fair treatment,"Questions B25 to B28.
+
+The headline theme score is calculated as the median percentage of “agree” and “strongly agree” responses across the organisation."
+rw_p,Resources and workload,"Questions B29 to B34.
+
+The headline theme score is calculated as the median percentage of “agree” and “strongly agree” responses across the organisation."
+pb_p,Pay and benefits,"Questions B35 to B37.
+
+The headline theme score is calculated as the median percentage of “agree” and “strongly agree” responses across the organisation."
+lc_p,Leadership and managing change,"Questions B38 to B46.
+
+The headline theme score is calculated as the median percentage of “agree” and “strongly agree” responses across the organisation."
+HSE_index,Proxy stress index,"A measure of wellbeing. A lower result represents a greater capacity to prevent and manage stress in a team.  Questions B05, B08, B18, B26, B30, B33, B45 and E03.
+
+For each respondent, a proxy stress score is calculated as the average score across the eight questions. The  index is the average score of all respondents."
+PERMA_index,PERMA index,"A measure of wellbeing, measuring positive emotion, engagement, relationships, meaning and accomplishment. A higher result represents a higher level of flourishing or engagement at an individual or team level.  Questions B01, B03, B18, W01 and W02. 
+
+For each respondent, an PERMA score is calculated as the average score across the five questions. The PERMA index is the mean score of all 5 questions."
+B01,I am interested in my work,I am interested in my work (% strongly agree or agree)
+B02,I am sufficiently challenged by my work,I am sufficiently challenged by my work (% strongly agree or agree)
+B03,My work gives me a sense of personal accomplishment,My work gives me a sense of personal accomplishment (% strongly agree or agree)
+B04,I feel involved in the decisions that affect my work,I feel involved in the decisions that affect my work (% strongly agree or agree)
+B05,I have a choice in deciding how I do my work,I have a choice in deciding how I do my work (% strongly agree or agree)
+B06,I have a clear understanding of [my organisation's] objectives,I have a clear understanding of [my organisation's] objectives (% strongly agree or agree)
+B07,I understand how my work contributes to [my organisation's] objectives,I understand how my work contributes to [my organisation's] objectives (% strongly agree or agree)
+B08,My manager motivates me to be more effective in my job,My manager motivates me to be more effective in my job (% strongly agree or agree)
+B09,My manager is considerate of my life outside work,My manager is considerate of my life outside work (% strongly agree or agree)
+B10,My manager is open to my ideas,My manager is open to my ideas (% strongly agree or agree)
+B11,My manager helps me to understand how I contribute to [my organisation's] objectives,My manager helps me to understand how I contribute to [my organisation's] objectives (% strongly agree or agree)
+B12,"Overall, I have confidence in the decisions made by my manager","Overall, I have confidence in the decisions made by my manager (% strongly agree or agree)"
+B13,My manager recognises when I have done my job well,My manager recognises when I have done my job well (% strongly agree or agree)
+B14,I receive regular feedback on my performance,I receive regular feedback on my performance (% strongly agree or agree)
+B15,The feedback I receive helps me to improve my performance,The feedback I receive helps me to improve my performance (% strongly agree or agree)
+B16,I think that my performance is evaluated fairly,I think that my performance is evaluated fairly (% strongly agree or agree)
+B17,Poor performance is dealt with effectively in my team,Poor performance is dealt with effectively in my team (% strongly agree or agree)
+B18,The people in my team can be relied upon to help when things get difficult in my job,The people in my team can be relied upon to help when things get difficult in my job (% strongly agree or agree)
+B19,The people in my team work together to find ways to improve the service we provide,The people in my team work together to find ways to improve the service we provide (% strongly agree or agree)
+B20,The people in my team are encouraged to come up with new and better ways of doing things,The people in my team are encouraged to come up with new and better ways of doing things (% strongly agree or agree)
+B21,I am able to access the right learning and development opportunities when I need to,I am able to access the right learning and development opportunities when I need to (% strongly agree or agree)
+B22,Learning and development activities I have completed in the past 12 months have helped to improve my performance,Learning and development activities I have completed in the past 12 months have helped to improve my performance (% strongly agree or agree)
+B23,There are opportunities for me to develop my career in [my organisation],There are opportunities for me to develop my career in [my organisation] (% strongly agree or agree)
+B24,Learning and development activities I have completed while working for [my organisation] are helping me to develop my career,Learning and development activities I have completed while working for [my organisation] are helping me to develop my career (% strongly agree or agree)
+B25,I am treated fairly at work,I am treated fairly at work (% strongly agree or agree)
+B26,I am treated with respect by the people I work with,I am treated with respect by the people I work with (% strongly agree or agree)
+B27,I feel valued for the work I do,I feel valued for the work I do (% strongly agree or agree)
+B28,"I think that [my organisation] respects individual differences (e.g. cultures, working styles, backgrounds, ideas, etc)","I think that [my organisation] respects individual differences (e.g. cultures, working styles, backgrounds, ideas, etc) (% strongly agree or agree)"
+B29,I get the information I need to do my job well,I get the information I need to do my job well (% strongly agree or agree)
+B30,I have clear work objectives,I have clear work objectives (% strongly agree or agree)
+B31,I have the skills I need to do my job effectively,I have the skills I need to do my job effectively (% strongly agree or agree)
+B32,I have the tools I need to do my job effectively,I have the tools I need to do my job effectively (% strongly agree or agree)
+B33,I have an acceptable workload,I have an acceptable workload (% strongly agree or agree)
+B34,I achieve a good balance between my work life and my private life,I achieve a good balance between my work life and my private life (% strongly agree or agree)
+B35,I feel that my pay adequately reflects my performance,I feel that my pay adequately reflects my performance (% strongly agree or agree)
+B36,I am satisfied with the total benefits package,I am satisfied with the total benefits package (% strongly agree or agree)
+B37,Compared to people doing a similar job in other organisations I feel my pay is reasonable,Compared to people doing a similar job in other organisations I feel my pay is reasonable (% strongly agree or agree)
+B38,[Senior managers] in [my organisation] are sufficiently visible,[Senior managers] in [my organisation] are sufficiently visible (% strongly agree or agree)
+B39,I believe the actions of [senior managers] are consistent with [my organisation's] values,I believe the actions of [senior managers] are consistent with [my organisation's] values (% strongly agree or agree)
+B40,I believe that [my organisation's] senior leaders have a clear vision for the future of [my organisation],I believe that [my organisation's] senior leaders have a clear vision for the future of [my organisation] (% strongly agree or agree)
+B41,"Overall, I have confidence in the decisions made by [my organisation's senior managers]","Overall, I have confidence in the decisions made by [my organisation's senior managers] (% strongly agree or agree)"
+B42,I feel that change is managed well in [my organisation],I feel that change is managed well in [my organisation] (% strongly agree or agree)
+B43,When changes are made in [my organisation] they are usually for the better,When changes are made in [my organisation] they are usually for the better (% strongly agree or agree)
+B44,[My organisation] keeps me informed about matters that affect me,[My organisation] keeps me informed about matters that affect me (% strongly agree or agree)
+B45,I have the opportunity to contribute my views before decisions are made that affect me,I have the opportunity to contribute my views before decisions are made that affect me (% strongly agree or agree)
+B46,I think it is safe to challenge the way things are done in [my organisation],I think it is safe to challenge the way things are done in [my organisation] (% strongly agree or agree)
+B47,I am proud when I tell others I am part of [my organisation] ,I am proud when I tell others I am part of [my organisation] (% strongly agree or agree)
+B48,I would recommend [my organisation] as a great place to work,I would recommend [my organisation] as a great place to work (% strongly agree or agree)
+B49,I feel a strong personal attachment to [my organisation],I feel a strong personal attachment to [my organisation] (% strongly agree or agree)
+B50,[My organisation] inspires me to do the best in my job,[My organisation] inspires me to do the best in my job (% strongly agree or agree)
+B51,[My organisation] motivates me to help it achieve its objectives,[My organisation] motivates me to help it achieve its objectives (% strongly agree or agree)
+B52,,I believe that [senior managers] in [my organisation] will take action on the results from this survey (% strongly agree or agree)
+B53,,"Where I work, I think effective action has been taken on the results of the last survey (% strongly agree or agree)"
+B54,,I am trusted to carry out my job effectively (% strongly agree or agree)
+B55,,"I believe I would be supported if I try a new idea, even if it may not work (% strongly agree or agree)"
+B56,,"In [my organisation], people are encouraged to speak up when they identify a serious policy or delivery risk (% strongly agree or agree)"
+B57,,I feel able to challenge inappropriate behaviour in the workplace (% strongly agree or agree)
+B58,,My organisation is committed to creating a diverse and inclusive workplace (% strongly agree or agree)
+B59,,I am aware of the Civil Service vision for 'A Brilliant Civil Service' (% strongly agree or agree)
+B60,,Managers in my Area/Directorate/Division actively role model the behaviours set out in the Civil Service Leadership Statement (% always or most of the time)
+C01,Future intentions,Question C01. Question C01 has four response options and respondents can only select one of the options. The benchmark score is the median proportion of responses to each option.
+C01_1,I want to leave [my organisation] as soon as possible,Results are the percentage of respondents who selected this answer for question C01
+C01_2,I want to leave [my organisation] within the next 12 months,Results are the percentage of respondents who selected this answer for question C01
+C01_3,I want to stay working for [my organisation] for at least the next year,Results are the percentage of respondents who selected this answer for question C01
+C01_4,I want to stay working for [my organisation] for at least the next three years,Results are the percentage of respondents who selected this answer for question C01
+D01,Are you aware of the Civil Service Code?,Results are the percentage of respondents answering ‘yes’
+D02,Are you aware of how to raise a concern under the Civil Service Code?,Results are the percentage of respondents answering ‘yes’
+D03,Are you confident that if you raise a concern under the Civil Service Code in [your organisation] it would be investigated properly?,Results are the percentage of respondents answering ‘yes’
+E01,Discrimination at work,"Have you been discriminated against at work, in the past 12 months? (% yes)"
+E02,Grounds for discrimination,
+E02_01,Age,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_02,Caring responsibilities,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_03,Disability,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_04,Ethnic background,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_05,Gender,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_06,Gender reassignment or perceived gender,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_07,Grade or responsibility level,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_08,Main spoken/written language or language ability,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_09,Marital status or civil partnership,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_10,Mental health,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_11,Pay,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_12,"Pregnancy, maternity or paternity (% yes to E01 selecting this option)",Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_13,Religion or belief,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_14,Sex,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_15,Sexual orientation,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_16,Social or educational background,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_17,Working location,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_18,Working pattern,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_19,Any other grounds,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E02_20,Prefer not to say,Results are the percentage of respondents who answered ‘yes’ to question E01 and also this option
+E03,Bullying and harassment at work,"Have you been bullied or harassed at work, in the past 12 months? (%yes)"
+E03A,Nature of bullying and/or harassment,
+E03A_01,Comments about my personal appearance,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E03A_02,"Sexual harassment (e.g. sexual comments or jokes, unwelcome sexual advances, touching or assault)",Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E03A_03,Spreading gossip or making false accusations about me,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E03A_04,"Intimidation or verbal aggression (e.g. shouting, swearing, making threats)",Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E03A_05,"Physical assault (e.g. object thrown at me, pushed, hit) ",Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E03A_06,Humiliated in front of team or others,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E03A_07,Negative Micromanagement (e.g. excessive control; made to feel incompetent),Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E03A_08,"Removal of job responsibilities, unconstructive criticism, or impossible/changing expectations",Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E03A_09,Treated less favourably to others,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E03A_10,"Ignored, excluded, marginalised",Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E03A_11,Undermining or taking credit for my work,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E03A_12,Denied time off for personal ill health,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E03A_13,Denied time off for family or caring responsibilities,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E03A_14,Disclosure of personal/sensitive information to colleagues without my consent,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E03A_15,Unhelpful comments about my mental health or being off sick,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E03A_16,Something else not listed here,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E03A_17,Prefer not to say,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E04,Who bullied and/or harassed you?,
+E04_01,A colleague in my Area/Directorate/Division,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E04_02,A colleague in a different Area/Directorate/Division of [my organisation] ,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E04_03,My manager,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E04_04,Another senior member of staff in [my organisation],Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E04_05,Someone I manage,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E04_06,Someone working in a different Civil Service organisation,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E04_07,Someone working for a non to Civil Service organisation,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E04_08,A contractor,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E04_09,"A service user (e.g. customer, claimant, offender)",Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E04_10,A member of the public,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E04_11,Someone else not listed here,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E04_12,Prefer not to say,Results are the percentage of respondents who answered ‘yes’ to question E03 and also this option
+E05,Did you report your experience of bullying and/or harassment?,Results are the percentage of respondents answering ‘yes’
+E06,Responding to bullying and harassment,
+E06_A,Appropriate action was taken to address the behaviour I experienced,Results are the percentage of respondents answering ‘yes’
+E06_B,The bullying and/or harassment has stopped,Results are the percentage of respondents answering ‘yes’
+E06_C,The culture in my area allows this kind of behaviour to continue,Results are the percentage of respondents answering ‘yes’
+E06_D,I felt like I was punished for reporting the incident,Results are the percentage of respondents answering ‘yes’
+W01,"Overall, how satisfied are you with your life nowadays? ","Results are the percentage of respondents rating 7 to 10, where 10 is 'completely satisfied'"
+W02,"Overall, to what extent do you feel the things you do in your life are worthwhile?","Results are the percentage of respondents rating 7 to 10, where 10 is 'worthwhile'"
+W03,"Overall, how happy did you feel yesterday? ","Results are the percentage of respondents rating 7 to 10, where 10 is 'completely happy'"
+W04,"Overall, how anxious did you feel yesterday? ","Results are the percentage of respondents rating 6 to 10, where 10 is 'completely anxious'"
+J04B,"In general, how would you rate your overall mental health now?","Results are the percentage of respondents rating 'excellent', 'very good' or 'good'"
+W05,"In general, how would you rate your overall physical health now? ","Results are the percentage of respondents rating 'excellent', 'very good' or 'good'"
+W07,How often do you feel lonely?,Results are the percentage of respondents rating 'often or always'
+W08,The people in my team genuinely care about my wellbeing,Results are the percentage of respondents rating 'strongly agree' or 'agree'

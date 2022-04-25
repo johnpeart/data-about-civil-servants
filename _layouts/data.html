@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+{% assign questions = site.data.questions %}
+{% assign code = page.id | remove: "/question/" %}
+{% assign question = site.data.questions | where_exp: "q", "q.code == code" | first %}
+{% assign title = question.label %}
+{% assign label = question.label %}
+{% assign description = question.description %}
+
+{% assign soMale = site.data.sexualorientation | where: "demographic", "Male" %}
+{% assign soFemale = site.data.sexualorientation | where: "demographic", "Female" %}
+{% assign soOther = site.data.sexualorientation | where: "demographic", "Other" %}
+
+{% assign genderJ1A = site.data.gender | where: "demographic", "J1A" %}
+{% assign genderJ1Bcisgender = site.data.gender | where: "demographic", "J1B" | where_exp: "data", "data.response contains 'Cis'" %}
+{% assign genderJ1Btransgender = site.data.gender | where: "demographic", "J1B" | where_exp: "data", "data.response contains 'Trans'" %}
+{% assign genderJ1Ccisgender = site.data.gender | where: "demographic", "J1C" | where_exp: "data", "data.response contains 'Cis'" %}
+{% assign genderJ1Ctransgender = site.data.gender | where: "demographic", "J1C" | where_exp: "data", "data.response contains 'Trans' or data.response contains 'Other'" %}
+
+{% include components/check-questions-and-responses.html %}
+
+{% include components/data-page-header.html %}
+
+{% if page.questions != nil %}
+  {% include components/data-sexualorientation.html %}
+  {% include components/data-gender.html %}
+  {% assign noquestions = false %}
+{% endif %}
+
+{% include components/data-questions.html %}
+{% include components/data-responses.html %}

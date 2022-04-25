@@ -1,0 +1,55 @@
+<details class="data-block">
+  
+  <summary class="data-block--summary">
+    Results by sexual orientation
+  </summary>
+  
+  
+  <section class="data-block data-block--sexual-orientation">
+    
+    <h3 class="data-block--header">Respondents who are men</h3>
+    
+    <div class="data-block--values">
+      
+      {% for data in soMale %}
+
+      <dl class="data-block--item">
+        <dt class="data--label">{{ data.response | remove: "or Lesbian" | replace: "Heterosexual/straight", "Heterosexual" }}</dt>
+        <dd class="data--value">{{ data[code] | round }}%</dd>
+      </dl>
+      
+      {% endfor %}
+      
+    </div>
+    
+    <h3 class="data-block--header">Respondents who are women</h3>
+    <div class="data-block--values">
+      
+      {% for data in soFemale %}
+
+      <dl class="data-block--item">
+        <dt class="data--label">{{ data.response | replace: "Heterosexual/straight", "Heterosexual" }}</dt>
+        <dd class="data--value">{{ data[code] | round }}%</dd>
+      </dl>
+      
+      {% endfor %}
+      
+    </div>
+    
+    <h3 class="data-block--header">Respondents with other genders</h3>
+    <div class="data-block--values">
+      
+      {% for data in soOther %}
+
+      <dl class="data-block--item">
+        <dt class="data--label">{{ data.response | replace: "Heterosexual/straight", "Heterosexual" }}</dt>
+        <dd class="data--value">{{ data[code] | round }}%</dd>
+      </dl>
+      
+      {% endfor %}
+      
+    </div>
+      
+  </section>
+  
+</details>
